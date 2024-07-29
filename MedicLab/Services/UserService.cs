@@ -2,6 +2,7 @@
 using MedicLab.Context;
 using MedicLab.Models;
 using MedicLab.Models.DTO;
+using MedicLab.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Collections.Concurrent;
@@ -11,7 +12,7 @@ using System.Text;
 
 namespace MedicLab.Services
 {
-    public class UserService
+    public class UserService:IUserService
     {
         public ApplicationDbContext DbContext { get; set; }
         public IConfiguration configuration { get; set; }
@@ -119,7 +120,6 @@ namespace MedicLab.Services
         public async Task<ErrorProvider> LogOut(HttpRequest request)
         {
             var token = request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            
             await Task.CompletedTask;
             return defaultError;
         }
@@ -178,7 +178,7 @@ namespace MedicLab.Services
                 error = new ErrorProvider()
                 {
                     Status = true,
-                    Name = "None users in database!"
+                    Name = "There are no users in the database!"
                 };
                 return (error, null);
             }
