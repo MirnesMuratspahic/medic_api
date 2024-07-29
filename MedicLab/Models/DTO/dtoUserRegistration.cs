@@ -18,5 +18,7 @@ namespace MedicLab.Models.DTO
         public string ImageUrl { get; set; } = string.Empty;
         [Required]
         public DateOnly DateOfBirth { get; set; }
+        [Required]
+        public string Role { get; set; } = string.Empty;
     }
 }

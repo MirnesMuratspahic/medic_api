@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MedicLab\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\UserService.cs",
+              "RelativeToolTip": "MedicLab\\Services\\UserService.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAswE4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:15:20.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "MedicLab\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "MedicLab\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:14:58.592Z",
+              "EditorCaption": ""
             }
           ]
         }
