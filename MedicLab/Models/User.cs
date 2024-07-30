@@ -18,12 +18,12 @@ namespace MedicLab.Models
         [Required]
         public string ImageUrl { get; set; } = string.Empty;
         [Required]
-        public DateOnly DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
         [Required]
         public string Status {  get; set; } = string.Empty;
         [JsonIgnore][Required]
         public string Role { get; set; } = string.Empty;
-        public DateOnly LastLoginDate { get; set; }
+        public DateTime LastLoginDate { get; set; }
 
     }
 }

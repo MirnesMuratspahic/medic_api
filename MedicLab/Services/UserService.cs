@@ -3,6 +3,7 @@ using MedicLab.Context;
 using MedicLab.Models;
 using MedicLab.Models.DTO;
 using MedicLab.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Collections.Concurrent;
@@ -32,7 +33,7 @@ namespace MedicLab.Services
             if (userDto == null)
                 return (defaultError,null);
 
-            var userFromDatabase = await DbContext.Users.FirstOrDefaultAsync(x => x.Username == userDto.Username);
+            var userFromDatabase = await DbContext.Users.FirstOrDefaultAsync(x => x.Username.ToLower() == userDto.Username.ToLower());
 
             if (userFromDatabase == null)
             {
@@ -42,6 +43,16 @@ namespace MedicLab.Services
                     Name = "You have not entered correct information!"
                 };
                 return (error,null);
+            }
+
+            if (userFromDatabase.Role != "Admin")
+            {
+                error = new ErrorProvider()
+                {
+                    Status = true,
+                    Name = "Only admin can log in!"
+                };
+                return (error, null);
             }
 
             if (!BCrypt.Net.BCrypt.Verify(userDto.Password, userFromDatabase.PasswordHash))
@@ -55,7 +66,7 @@ namespace MedicLab.Services
             }
             var token = CreateToken(userFromDatabase);
 
-            userFromDatabase.LastLoginDate = DateOnly.FromDateTime(DateTime.Today);
+            userFromDatabase.LastLoginDate = DateTime.Now;
             await DbContext.SaveChangesAsync();
 
             return (error,token);
@@ -64,12 +75,8 @@ namespace MedicLab.Services
 
         public async Task<(ErrorProvider, User)> GetUserById(int id)
         {
-            if (id == null || id == 0)
-            {
-                return (defaultError, null);
-            }
 
-            var userFromDatabase = await DbContext.Users.FirstOrDefaultAsync(x => x.Id == id);
+            var userFromDatabase = await DbContext.Users.FindAsync(id);
 
             if (userFromDatabase == null)
             {
@@ -87,12 +94,8 @@ namespace MedicLab.Services
 
         public async Task<ErrorProvider> BlockUserById(int id)
         {
-            if (id == null || id == 0)
-            {
-                return defaultError;
-            }
 
-            var userFromDatabase = await DbContext.Users.FirstOrDefaultAsync(x => x.Id == id);
+            var userFromDatabase = await DbContext.Users.FindAsync(id);
 
             if (userFromDatabase == null)
             {
@@ -129,7 +132,7 @@ namespace MedicLab.Services
             if (userDto == null)
                 return defaultError;
 
-            var user = await DbContext.Users.FirstOrDefaultAsync(x => x.Username == userDto.Username);
+            var user = await DbContext.Users.FirstOrDefaultAsync(x => x.Username.ToLower() == userDto.Username.ToLower());
 
             if (user != null)
             {
@@ -145,15 +148,15 @@ namespace MedicLab.Services
 
             var newUser = new User()
             {
-                Username = userDto.Username,
+                Username = userDto.Username.ToLower(),
                 PasswordHash = passwordHash,
-                Name = userDto.Name,
+                Name = userDto.Name.ToLower(),
                 Orders = userDto.Orders,
                 ImageUrl = userDto.ImageUrl,
                 DateOfBirth = userDto.DateOfBirth,
                 Status = "Active",
                 Role = userDto.Role,
-                LastLoginDate = DateOnly.FromDateTime(DateTime.Today)
+                LastLoginDate = DateTime.Now
             };
 
             await DbContext.Users.AddAsync(newUser);
@@ -162,7 +165,7 @@ namespace MedicLab.Services
 
             error = new ErrorProvider()
             {
-                Status = true,
+                Status = false,
                 Name = "User registered!"
             };
 

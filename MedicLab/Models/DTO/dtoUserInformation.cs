@@ -7,6 +7,6 @@
         public  int UserId { get; set; }
         public string Name { get; set; }
         public string Username { get; set; }
-        public DateOnly LastLoginDate { get; set; }
+        public DateTime LastLoginDate { get; set; }
     }
 }
