@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\models\\dto\\dtouserregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\models\\dto\\dtouserregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\models\\dto\\dtouserupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\models\\dto\\dtouserupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\mediclab\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|c:\\users\\korisnik\\desktop\\mediclabapp\\mediclab\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4ECC15E-B3B5-4D87-8D68-B59FF700C038}|MedicLab\\MedicLab.csproj|solutionrelative:mediclab\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,89 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dtoUserRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Models\\DTO\\dtoUserRegistration.cs",
-              "RelativeDocumentMoniker": "MedicLab\\Models\\DTO\\dtoUserRegistration.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Models\\DTO\\dtoUserRegistration.cs",
-              "RelativeToolTip": "MedicLab\\Models\\DTO\\dtoUserRegistration.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:36:00.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dtoUserUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Models\\DTO\\dtoUserUpdate.cs",
-              "RelativeDocumentMoniker": "MedicLab\\Models\\DTO\\dtoUserUpdate.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Models\\DTO\\dtoUserUpdate.cs",
-              "RelativeToolTip": "MedicLab\\Models\\DTO\\dtoUserUpdate.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:27:46.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "MedicLab\\Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "MedicLab\\Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:25:21.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "MedicLab\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Controllers\\UserController.cs",
-              "RelativeToolTip": "MedicLab\\Controllers\\UserController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAowCwAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:16:28.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Models\\User.cs",
-              "RelativeDocumentMoniker": "MedicLab\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Models\\User.cs",
-              "RelativeToolTip": "MedicLab\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T21:30:46.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "MedicLab\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\MedicLabApp\\MedicLab\\Services\\UserService.cs",
-              "RelativeToolTip": "MedicLab\\Services\\UserService.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAUwGgAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T20:18:45.453Z",
-              "EditorCaption": ""
             }
           ]
         }

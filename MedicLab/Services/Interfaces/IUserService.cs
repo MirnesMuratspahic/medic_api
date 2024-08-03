@@ -15,8 +15,6 @@ namespace MedicLab.Services.Interfaces
         Task<(ErrorProvider, User)> GetUserById(int id);
         ///users/block/(id): Block a user by ID endpoint.
         Task<ErrorProvider> BlockUserById(int id);
-        ///logout: Admin logout endpoint.
-        Task<ErrorProvider> LogOut(HttpRequest request);
         ///register: Register/add user endpoint.
         Task<ErrorProvider> Register(dtoUserRegistration userRegistration);
         /// Update user informations

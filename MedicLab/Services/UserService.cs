@@ -145,19 +145,13 @@ namespace MedicLab.Services
 
             error = new ErrorProvider()
             {
-                Status = true,
+                Status = false,
                 Name = "User blocked"
             };
 
             return error;
         }
 
-        public async Task<ErrorProvider> LogOut(HttpRequest request)
-        {
-            var token = request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            await Task.CompletedTask;
-            return defaultError;
-        }
 
         public async Task<ErrorProvider> Register(dtoUserRegistration userDto)
         {

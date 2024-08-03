@@ -72,16 +72,6 @@ namespace MedicLab.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpGet("logout")]
-        public async Task<IActionResult> LogOut()
-        {
-            var errorStatus = await userService.LogOut(Request);
-            if (errorStatus.Status == true)
-                return BadRequest(errorStatus.Name);
-            return Ok(errorStatus);
-        }
-
-        [Authorize(Roles = "Admin")]
         [HttpPost("register")]
         public async Task<IActionResult> Register(dtoUserRegistration dtoUser)
         {
