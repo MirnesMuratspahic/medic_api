@@ -19,5 +19,7 @@ namespace MedicLab.Services.Interfaces
         Task<ErrorProvider> LogOut(HttpRequest request);
         ///register: Register/add user endpoint.
         Task<ErrorProvider> Register(dtoUserRegistration userRegistration);
+        /// Update user informations
+        Task<ErrorProvider> UpdateUser(int id, dtoUserUpdate user);
     }
 }

@@ -92,6 +92,38 @@ namespace MedicLab.Services
             return (error, userFromDatabase);
         }
 
+        public async Task<ErrorProvider> UpdateUser(int id, dtoUserUpdate user)
+        {
+
+            var userFromDatabase = await DbContext.Users.FindAsync(id);
+
+            if (userFromDatabase == null)
+            {
+                error = new ErrorProvider()
+                {
+                    Status = true,
+                    Name = "There is no user with that ID!"
+
+                };
+                return error;
+            }
+
+            userFromDatabase.Name = user.Name;
+            userFromDatabase.Username = user.Username;
+            userFromDatabase.DateOfBirth = user.DateOfBirth;
+            userFromDatabase.ImageUrl = user.ImageUrl;
+
+            DbContext.Users.Update(userFromDatabase);
+            await DbContext.SaveChangesAsync();
+
+            error = new ErrorProvider()
+            {
+                Status = false,
+                Name = "User updated!"
+            };
+            return error;
+        }
+
         public async Task<ErrorProvider> BlockUserById(int id)
         {
 

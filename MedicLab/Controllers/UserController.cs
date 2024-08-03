@@ -1,4 +1,5 @@
-﻿using MedicLab.Models.DTO;
+﻿using MedicLab.Models;
+using MedicLab.Models.DTO;
 using MedicLab.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -40,6 +41,17 @@ namespace MedicLab.Controllers
         }
 
         [Authorize(Roles = "Admin")]
+        [HttpPut("users/update/{id}")]
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] dtoUserUpdate user)
+        {
+            var errorStatus = await userService.UpdateUser(id,user);
+            if (errorStatus.Status == true)
+                return BadRequest(errorStatus.Name);
+            return Ok(errorStatus.Name);
+        }
+
+
+        [Authorize(Roles = "Admin")]
         [HttpPost("users/details/{id}")]
         public async Task<IActionResult> GetUserById([FromRoute] int id)
         {
@@ -56,7 +68,7 @@ namespace MedicLab.Controllers
             var errorStatus = await userService.BlockUserById(id);
             if (errorStatus.Status == true)
                 return BadRequest(errorStatus.Name);
-            return Ok(errorStatus);
+            return Ok(errorStatus.Name);
         }
 
         [Authorize(Roles = "Admin")]
